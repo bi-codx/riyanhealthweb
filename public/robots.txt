@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /node_modules/
+
+# Sitemap
+Sitemap: https://riyanhealthwebsite.github.io/sitemap.xml
