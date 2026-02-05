@@ -325,20 +325,19 @@ export function Footer() {
                 color: "var(--riyan-text-muted)",
               }}
             ></span>
-            <Heart
-              size={14}
-              style={{ color: "var(--riyan-primary-accent)" }}
-              fill="var(--riyan-primary-accent)"
-            />
-            <span
+            <a
+              href="https://rynsolutions.org"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[var(--riyan-primary-accent)] transition-colors duration-300"
               style={{
                 fontFamily: "Inter, sans-serif",
                 fontSize: "13px",
                 color: "var(--riyan-text-muted)",
               }}
             >
-              RYN SOLUTIONS
-            </span>
+              Created by RYN SOLUTIONS
+            </a>
           </div>
         </div>
       </div>
