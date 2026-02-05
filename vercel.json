@@ -3,9 +3,7 @@
   "devCommand": "npm run dev",
   "installCommand": "npm install",
   "framework": "vite",
-  "env": {
-    "NEXT_PUBLIC_ANALYTICS_ID": "@env NEXT_PUBLIC_ANALYTICS_ID"
-  },
+  "outputDirectory": "build",
   "rewrites": [
     {
       "source": "/(.*)",
