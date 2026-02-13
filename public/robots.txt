@@ -1,6 +1,7 @@
 User-agent: *
 Allow: /
 Disallow: /node_modules/
+Crawl-delay: 1
 
 # Sitemap
 Sitemap: https://www.riyanhealth.com/sitemap.xml

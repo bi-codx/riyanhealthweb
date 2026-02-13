@@ -8,11 +8,13 @@ import { Partners } from './components/Partners';
 import { ContactUs } from './components/ContactUs';
 import { InvestorsPartners } from './components/InvestorsPartners';
 import { Blog } from './components/Blog';
-import { Footer } from './components/Footer'; // Import the new footer
+import { Footer } from './components/Footer';
+import { SEOHead } from './components/SEOHead';
 import { Toaster } from 'sonner@2.0.3';
 
 export default function App() {
-  const [currentPage, setCurrentPage] = useState('/');
+  // Initialize from current URL so Googlebot sees the correct page on direct access
+  const [currentPage, setCurrentPage] = useState(() => window.location.pathname);
 
   useEffect(() => {
     // Handle custom navigation events
@@ -63,10 +65,11 @@ export default function App() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: 'var(--riyan-bg-dark)' }}>
+      <SEOHead currentPage={currentPage} />
       <Header />
       {renderPage()}
-      <Footer /> {/* Add the new footer here */}
-      <Toaster 
+      <Footer />
+      <Toaster
         position="bottom-right"
         toastOptions={{
           style: {

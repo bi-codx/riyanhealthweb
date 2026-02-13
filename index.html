@@ -1,20 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="healthcare, health, RIYAN, innovation, wellness, Africa, diagnostics, patient care" />
+    <meta name="author" content="RIYAN HEALTH" />
+    <meta name="robots" content="index, follow" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
 
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <meta name="description" content="RIYAN HEALTH - Healthcare Innovation and Solutions" />
-      <meta name="keywords" content="healthcare, health, RIYAN, innovation, wellness" />
-      <meta name="author" content="RIYAN HEALTH" />
-      <meta property="og:title" content="RIYAN HEALTH" />
-      <meta property="og:description" content="Healthcare Innovation and Solutions" />
-      <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.riyanhealth.com/" />
-      <link rel="canonical" href="https://www.riyanhealth.com/" />
-      <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
-      <title>RIYAN HEALTH</title>
-    </head>
+    <!-- Fallback title — overridden per-page by SEOHead component -->
+    <title>RIYAN HEALTH</title>
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6XEDZPW0T"></script>
@@ -22,13 +17,23 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
       gtag('config', 'G-X6XEDZPW0T');
     </script>
 
-    <body>
-      <div id="root"></div>
-      <script type="module" src="/src/main.tsx"></script>
-    </body>
-  </html>
-  
+    <!-- Organization Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "RIYAN HEALTH",
+      "url": "https://www.riyanhealth.com",
+      "description": "Healthcare Innovation and Solutions",
+      "sameAs": []
+    }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
